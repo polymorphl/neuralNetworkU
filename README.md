@@ -1,3 +1,0 @@
-# neuralNetworkU
-Neural Network ?
- 
