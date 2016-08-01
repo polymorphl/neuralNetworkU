@@ -1,6 +1,8 @@
 using UnityEngine;
 using System.Collections.Generic;
 
+//http://www.c-sharpcorner.com/article/C-Sharp-artificial-intelligence-ai-programming-a-basic-object/
+
 public interface INeuronSignal {
     double Output { get; set; }
 }
