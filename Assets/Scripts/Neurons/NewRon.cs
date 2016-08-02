@@ -1,8 +1,4 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using UnityEngine;
+﻿using UnityEngine;
 
 namespace Assets.Scripts.Neurons {
     public class NewRon : MonoBehaviour {
@@ -36,9 +32,10 @@ namespace Assets.Scripts.Neurons {
             int count = 0;
 
             do {
+                Debug.Log(count);
                 count++;
 
-                for (int i = 0; i < 100; i++) net.Train(input, output);
+                //for (int i = 0; i < 100; i++) net.Train(input, output);
 
                 net.ApplyLearning();
 

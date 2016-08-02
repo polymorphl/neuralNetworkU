@@ -67,7 +67,7 @@ public class Neuron : INeuron {
     }
 
     void INeuron.ApplyLearning(INeuralLayer layer) {
-        throw new NotImplementedException();
+        //throw new NotImplementedException();
     }
 
     public void Pulse(INeuralLayer layer) {
@@ -210,6 +210,11 @@ public class NeuralNet : INeuralNet {
         }
     }
 
+
+    public NeuralNet() {
+        Debug.Log("Instantiate NeuralNet");
+    }
+
     public void ApplyLearning() {
         lock (this) {
             hiddenLayer.ApplyLearning(this);
@@ -223,8 +228,10 @@ public class NeuralNet : INeuralNet {
             outputLayer.Pulse(this);
         }
     }
+    
 
     public void Initialize(int randomSeed, int inputNeuronCount, int hiddenNeuronCount, int outputNeuronCount) {
+        Debug.Log("Start NeuralSet Initializae");
         int layerCount, i, j, k;
         System.Random rand;
         INeuralLayer layer;
