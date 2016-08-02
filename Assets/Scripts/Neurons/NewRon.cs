@@ -35,7 +35,7 @@ namespace Assets.Scripts.Neurons {
                 Debug.Log(count);
                 count++;
 
-                //for (int i = 0; i < 100; i++) net.Train(input, output);
+                for (int i = 0; i < 100; i++) net.Train(input, output);
 
                 net.ApplyLearning();
 
@@ -58,11 +58,13 @@ namespace Assets.Scripts.Neurons {
                 net.InputLayer[1].Output = high;
                 net.Pulse();
                 hh = net.OutputLayer[0].Output;
+
+                Debug.Log(ll + " " + lh + " " + hl + " " + hh);
             } while (hh > mid || lh < mid || hl < mid || ll > mid);
 
-            Debug.Log((count * 100) + " iteraions required for trainn");
+            //Debug.Log((count * 100) + " iteraions required for trainn");
 
-
+            Debug.Log("bla");
         }
     }
 }
