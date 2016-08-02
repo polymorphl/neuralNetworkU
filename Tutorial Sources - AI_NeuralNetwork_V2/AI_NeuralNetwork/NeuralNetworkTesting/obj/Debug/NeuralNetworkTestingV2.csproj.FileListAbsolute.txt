@@ -1,0 +1,2 @@
+C:\Users\aholsnyder\Downloads\AI_NeuralNetwork_V2\AI_NeuralNetwork\NeuralNetworkTesting\obj\Debug\NeuralNetworkTesting.exe
+C:\Users\aholsnyder\Downloads\AI_NeuralNetwork_V2\AI_NeuralNetwork\NeuralNetworkTesting\obj\Debug\NeuralNetworkTesting.pdb

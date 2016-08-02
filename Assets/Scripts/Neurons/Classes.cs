@@ -66,8 +66,11 @@ public class Neuron : INeuron {
         bias = new NeuralFactor(0.4);
     }
 
-    void INeuron.ApplyLearning(INeuralLayer layer) {
-        //throw new NotImplementedException();
+    void INeuron.ApplyLearning(INeuralLayer layer, ref double learningRate) {
+        foreach (KeyValuePair<INeuronSignal, NeuralFactor> m in input)
+            m.Value.ApplyWeightChange(ref learningRate);
+
+        bias.ApplyWeightChange(ref learningRate);
     }
 
     public void Pulse(INeuralLayer layer) {

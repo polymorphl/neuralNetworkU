@@ -1,0 +1,77 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<ClassDiagram MajorVersion="1" MinorVersion="1" MembersFormat="NameAndType">
+  <Font Name="Microsoft Sans Serif" Size="8.25" />
+  <Class Name="NeuralNetworkTesting.NeuralFactor">
+    <Position X="6.5" Y="0.5" Width="1.75" />
+    <TypeIdentifier>
+      <FileName>Class1.cs</FileName>
+      <HashCode>AAAABEQAAAAAAAABAAAAAAAAASAAgAgAAAAAAAAAAAA=</HashCode>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="NeuralNetworkTesting.Neuron" BaseTypeListCollapsed="true">
+    <Position X="0.75" Y="10.5" Width="3.5" />
+    <TypeIdentifier>
+      <FileName>Class1.cs</FileName>
+      <HashCode>AAAAAAAAIQAAAQAAAAAIAAABEAEBAEIQAAAEAAAAAQA=</HashCode>
+    </TypeIdentifier>
+    <Lollipop Position="0.2" />
+  </Class>
+  <Class Name="NeuralNetworkTesting.NeuralLayer" BaseTypeListCollapsed="true">
+    <Position X="0.75" Y="7.75" Width="4" />
+    <TypeIdentifier>
+      <FileName>Class1.cs</FileName>
+      <HashCode>AGIAAEAAAAIAABAQCAAABAQAAAEBAAIACAAAAABQIAA=</HashCode>
+    </TypeIdentifier>
+    <Lollipop Position="0.2" />
+  </Class>
+  <Class Name="NeuralNetworkTesting.NeuralNet" BaseTypeListCollapsed="true">
+    <Position X="4.5" Y="10.5" Width="2.5" />
+    <TypeIdentifier>
+      <FileName>Class1.cs</FileName>
+      <HashCode>BEwgAggAAAADAYAAAgAAAACAAAEBAAIEAAAAEWAABEA=</HashCode>
+    </TypeIdentifier>
+    <NestedTypes>
+      <Delegate Name="NeuralNetworkTesting.NeuralNet.GammaCalculation" Collapsed="true">
+        <TypeIdentifier>
+          <NewMemberFileName>Class1.cs</NewMemberFileName>
+        </TypeIdentifier>
+      </Delegate>
+    </NestedTypes>
+    <Lollipop Position="0.2" />
+  </Class>
+  <Interface Name="NeuralNetworkTesting.INeuronReceptor">
+    <Position X="2.5" Y="0.5" Width="3.25" />
+    <TypeIdentifier>
+      <FileName>Class1.cs</FileName>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAEAAAAAAAAAAAAAAAAAA=</HashCode>
+    </TypeIdentifier>
+  </Interface>
+  <Interface Name="NeuralNetworkTesting.INeuronSignal">
+    <Position X="0.75" Y="0.5" Width="1.5" />
+    <TypeIdentifier>
+      <FileName>Class1.cs</FileName>
+      <HashCode>AAAAAAAAAAAAAAAAAAAIAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+    </TypeIdentifier>
+  </Interface>
+  <Interface Name="NeuralNetworkTesting.INeuron">
+    <Position X="1.75" Y="2" Width="2" />
+    <TypeIdentifier>
+      <FileName>Class1.cs</FileName>
+      <HashCode>AAAAAAAAIQAAAQAAAAAIAAAAAAEBAAIAAAAAAAAAAAA=</HashCode>
+    </TypeIdentifier>
+  </Interface>
+  <Interface Name="NeuralNetworkTesting.INeuralLayer">
+    <Position X="0.5" Y="5" Width="2.25" />
+    <TypeIdentifier>
+      <FileName>Class1.cs</FileName>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAAEBAAIAAAAAAAAAAAA=</HashCode>
+    </TypeIdentifier>
+  </Interface>
+  <Interface Name="NeuralNetworkTesting.INeuralNet">
+    <Position X="3" Y="5" Width="2.25" />
+    <TypeIdentifier>
+      <FileName>Class1.cs</FileName>
+      <HashCode>AAAAAAAAAAAAAAAAAgAAAAAAAAEBAAIAAAAAACAABEA=</HashCode>
+    </TypeIdentifier>
+  </Interface>
+</ClassDiagram>

@@ -1,0 +1,8 @@
+bin\Debug\NeuralNetworkTesting.exe
+bin\Debug\NeuralNetworkTesting.pdb
+obj\Debug\ResolveAssemblyReference.cache
+obj\Debug\NeuralNetworkTesting.Properties.Resources.resources
+obj\Debug\NeuralNetworkTesting.csproj.GenerateResource.Cache
+obj\Debug\NeuralNetworkTesting.exe
+obj\Debug\NeuralNetworkTesting.pdb
+obj\Debug\NeuralNetworkTesting.Form1.resources

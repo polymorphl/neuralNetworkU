@@ -15,28 +15,37 @@ public interface INeuronReceptor {
 
 public class NeuralFactor {
 
-  private double m_weight;
-  private double m_delta;
+    private double weight;
+    private double delta, lastDelta;
 
-  public NeuralFactor(double weight) {
-      m_weight = weight;
-      m_delta = 0;
-  }
+    public NeuralFactor(double weight) {
+        weight = weight;
+        delta = 0;
+    }
 
-  public double Weight {
-      get { return m_weight; }
-      set { m_weight = value; }
-  }
+    public double Weight {
+    get { return weight; }
+    set { weight = value; }
+    }
 
-  public double Delta {
-      get { return m_delta; }
-      set { m_delta = value; }
-  }
+    public double Delta {
+    get { return delta; }
+    set { delta = value; }
+    }
 
-  public void ApplyDelta() {
-      m_weight += m_delta;
-      m_delta = 0;
-  }
+    public void ApplyDelta() {
+    weight += delta;
+    delta = 0;
+    }
+
+    public void ApplyWeightChange(ref double learningRate) {
+        lastDelta = delta;
+        weight += delta * learningRate;
+    }
+
+    public void ResetWeightChange() {
+        lastDelta = delta = 0;
+    }
 }
 
 public interface INeuron : INeuronSignal, INeuronReceptor {
