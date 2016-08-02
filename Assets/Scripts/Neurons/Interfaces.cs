@@ -15,19 +15,14 @@ public interface INeuronReceptor {
 
 public class NeuralFactor {
 
-  #region Member Variables
   private double m_weight;
   private double m_delta;
-  #endregion
 
-  #region Constructors
   public NeuralFactor(double weight) {
       m_weight = weight;
       m_delta = 0;
   }
-  #endregion
 
-  #region Properties
   public double Weight {
       get { return m_weight; }
       set { m_weight = value; }
@@ -37,14 +32,11 @@ public class NeuralFactor {
       get { return m_delta; }
       set { m_delta = value; }
   }
-  #endregion
 
-  #region Methods
   public void ApplyDelta() {
       m_weight += m_delta;
       m_delta = 0;
   }
-  #endregion
 }
 
 public interface INeuron : INeuronSignal, INeuronReceptor {
@@ -64,7 +56,9 @@ public interface INeuralLayer : IList<INeuron> {
 }
 
 public interface INeuralNet {
-  INeuralLayer OnputLayer, InputLayer, HiddenLayer;
+    INeuralLayer OutputLayer { get; set; }
+    INeuralLayer InputLayer { get; set; }
+    INeuralLayer HiddenLayer { get; set; }
 
   void ApplyLearning();
   void Pulse();
