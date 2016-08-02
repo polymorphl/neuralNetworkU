@@ -63,7 +63,7 @@ public class Neuron : INeuron {
 
     public Neuron() {
         input = new Dictionary<INeuronSignal, NeuralFactor>();
-        bias = new NeuralFactor();
+        bias = new NeuralFactor(0.4);
     }
 
     void INeuron.ApplyLearning(INeuralLayer layer) {
